@@ -43,14 +43,3 @@
 // Add the application to your portfolio.
 
 //user defined inquiry
-function promptUser() {
-	return inquirer.prompt([{
-			type: "input",
-			name: "Manager",
-			message: "What is your GitHub user name?"
-		},
-		{
-			type: "input",
-			name: "title",
-			message: "What is the name of your project?"
-		},
