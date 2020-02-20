@@ -43,3 +43,45 @@
 // Add the application to your portfolio.
 
 //user defined inquiry
+
+var express = require("express");
+var path = require("path");
+var app = express();
+var PORT = process.env.PORT || 9001;
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+
+require("./routes/apiRoutes")(app);
+require("./routes/htmlRoutes")(app);
+
+
+app.listen(PORT, function() {
+  console.log("App listening on PORT: " + PORT);
+});
+
+
+module.exports = function(app) {
+  //Get Requests
+  app.get("/tables", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/tables.html"));
+  });
+
+  app.get("/reserve", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/reserve.html"));
+  });
+
+  // If no matching route is found default to home
+  app.get("*", function(req, res) {
+    res.sendFile(path.join(__dirname, "../templates/main.html"));
+  });
+};
+//pklkjhkhkjhkjhkjhkjhkjkhgjdfdfsAasdfsadyujkiuydfsxcghjuiytrdsxcvbnjkiuytrdfcvbnjk
+var tableData = require("../data/tableData");
+
+module.exports = function(app) {
+  
+  app.get("/api/tables", function(req, res) {
+    res.json(tableData);
+  });
+};
