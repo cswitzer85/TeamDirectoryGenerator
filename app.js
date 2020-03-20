@@ -75,7 +75,9 @@ function promptUser(answers) {
             message: "What type of employee would you like to add?",
             choices: ["Manager", "Intern", "Engineer", "No more, I'm done"]
           
-    }], function (response) {})
+			console.log("response: " + response)
+	}], function (response) {})
+	console.log("answers: " + answers)
   };
     
    

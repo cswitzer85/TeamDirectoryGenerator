@@ -43,9 +43,9 @@ This project is an ongoing an assignment for SMU Coding Boot Camp, and as such i
 
 
 ## Contact
-GitHub user name: cswitzer85
-Linked-In user name: cody-switzer-1429593a
-e-mail: cswitzer85@gmail.com
+GitHub user name:   [cswitzer85](https://github.com/cswitzer85 "cswitzer85's GitHub")  
+Cody Switzer on:    [Linked In](https://www.linkedin.com/in/cody-switzer-1429593a/ "cody-switzer-1429593a's Linked In")  
+e-mail:             cswitzer85@gmail.com  
 
 ## Acknowledgements
 * All .test.js documents were provided by SMU Coding Boot Camp to simulate a colaborative project in which certain aspects are to be worked around and with.
